@@ -1,0 +1,783 @@
+/* Skeleton V1.2
+ * Copyright 2011, Dave Gamache
+ * www.getskeleton.com
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 6/20/2012
+ */
+@font-face {
+    font-family: 'HeydingsCommonIconsRegular';
+    src: url('../font/heydings_icons-webfont.eot');
+    src: url('../font/heydings_icons-webfont.eot?#iefix') format('embedded-opentype'), url('../font/heydings_icons-webfont.woff') format('woff'), url('../font/heydings_icons-webfont.ttf') format('truetype'), url('../font/heydings_icons-webfont.svg#HeydingsCommonIconsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* #Site Styles
+ ================================================== */
+* {
+	 margin: 0;
+	 padding: 0;
+}
+body {
+    background-color: #000;
+    color: #fff;
+    cursor: auto;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    -webkit-font-smoothing: antialiased; /*Fix for webkit rendering*/
+}
+html, body {
+	background: linear-gradient(
+		rgba(0, 0, 0, 0.6),
+		rgba(0, 0, 0, 0.6)
+		), url(images/bluepurple.jpg);
+}
+h1 {
+  background: url(images/mylogo.png) no-repeat 0 0;
+  border: 0;
+  color: #fff;
+  height: 200px;
+	margin: 5px;
+	padding: 0;
+  text-decoration:none;
+  width: 200px;
+}
+h2 {
+	  font-family: "Homemade Apple", cursive;
+    font-size: 1.2em;
+    font-weight: lighter;
+    margin: 0;
+    padding-top: 3%;
+    text-decoration: none;
+}
+h2 .img{
+	float: left;
+	padding-bottom: 5%;
+}
+h1, h3 {
+    color: #fff;
+    font-family: "Homemade Apple", cursive;
+    font-size: 3em;
+    font-weight: normal;
+    text-shadow: 2px 2px #000;
+}
+p {
+	font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 3%;
+    margin-left: 3%;
+    text-align: left;
+    text-indent: 30px;
+}
+.li {
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 30px;
+    list-style-type: none;
+    list-style-image: url('images/liltwinkle.png');
+    color: #bebebe;
+}
+.img {
+    border: none;
+    display: block;
+    max-width: 100%;
+}
+.ul {
+	  list-style-type: none;
+    font-size: 1.5em;
+ /*padding-top: 2.5em;
+    padding-left: 3.5em;   */
+}
+ul {
+  	list-style-type: none;
+    font-size: 18px;
+  /*padding-top: 2.5em;
+    padding-left: 3.5em;   */
+}
+ul:li {
+  	list-style-type: none;
+}
+.imgrt img {
+    display: block;
+    padding: 0;
+    float: left;
+    text-align: left;
+}
+.li {
+    list-style-image: url('images/liltwinkle.png');
+  /*  list-style-type: none;*/
+    margin: 0;
+    background: transparent url('[image/url]') no-repeat 0 -15px;
+} 
+.rt {
+    float: right;
+    padding: 5px;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.sixteen {
+    width: 100%;
+}
+.one-fourth, .three-fourths {
+    float: left;
+    margin: auto;
+    width: 90%;
+}
+.one-third {
+    width: 31.65%;
+}
+.one-fourth {
+    width: 20%;
+}
+#two-thirds {
+    width: 90%;
+    padding-left: 1.1em;
+    margin-top: 4%;
+}
+.three-fourths {
+    width: 73%;
+    padding-left: .625em;
+}
+.three-fourths-port {
+	  height: 100%;
+    width: 100%;
+}
+/*.logo:hover {
+    background: #989898;
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    transition: all .25s ease-in-out;
+}*/
+#sixteen li:hover, /*.logo*/ li, /*.logo*/ /*.logo*/ li:focus {
+    cursor: pointer;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    outline-style: 1px solid #fff;
+    /*box-shadow: 1px -5px 20px 20px rgba(255, 0, 222, 0.7);*/
+    color: #fff;
+    text-decoration: none;
+}
+#sixteen li {
+    text-shadow: none;
+    text-decoration-style: none;
+}
+#sixteen li:visited {
+    text-shadow: none;
+}
+#sixteen .icon {
+    text-shadow: none;
+}
+.outer {
+    box-sizing: border-box;
+    top: -194px;
+    left: -3px;
+    padding: 2px;
+    height: 155px;
+    width: 155px;
+    box-shadow: 1px -5px 20px 20px rgba(255, 0, 222, 0.7);
+    border-radius: 50%;
+    background: linear-gradient(to bottom right, rgba(255, 0, 222, 0.4), rgba(0, 0, 0, 0.6));
+}
+.outer::before {
+    content: "";
+    display: block;
+    position: relative;
+    left: -26px;
+    top: -26px;
+    height: 182px;
+    width: 182px;
+    border-radius: 50%;
+    border: 3px rgba(255, 0, 222, 0.4);
+    box-sizing: border-box;
+}
+.inner {
+    position:relative;
+    top: -184px;
+    left: -3px;
+    border-radius: 50%;
+    box-shadow: 1px -5px 15px 15px rgba(191, 191, 191, 0.5);
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.1), rgba(255, 0, 222, 0.1));
+    padding: 2px;
+    height: 150px;
+    width: 150px;
+  /*  box-shadow: 15px -10px 45px 5px rgba(255, 0, 222, 0.4);*/
+  /*  box-shadow: 0px 0px 30px -5px black;*/
+}
+.outer {
+    display: inline-block;
+    vertical-align: middle;
+}
+.module1 {
+    padding: 30px;
+    width: auto;
+    height: auto;
+    list-style-image: url('images/liltwinkle.png');
+    margin-bottom:0%;
+  /*margin-bottom: 10px;*/
+    margin-left: 10%;
+    margin-right: 10%;
+    background: linear-gradient(
+     rgba(64, 0, 55, 0.9),
+      rgba(255, 255, 255, 0.4)),
+       url(workflownovice/sublime/_images/sublimescreenshot2.png);
+    border-radius: 90px;
+    -webkit-box-shadow:
+        inset 0 0 50px #000,
+          inset 0 0 50px #000,
+            inset 0 0 50px #000;
+    -moz-box-shadow:
+        inset 0 0 50px #000,
+          inset 0 0 50px #000,
+            inset 0 0 50px #000;
+     box-shadow: 0px 30px 40px rgba(0,0,0,1);     
+}
+.module2 {
+    padding: 30px;
+    width: auto;
+    height: auto;
+    list-style-image: url('images/liltwinkle.png');
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: linear-gradient(
+     rgba(64, 0, 55, 0.9),
+      rgba(255, 255, 255, 0.4));
+     /*  url(workflownovice/sublime/_images/sublimescreenshot2.png)*/
+    
+    -webkit-box-shadow:
+        inset 0 0 50px #000,
+          inset 0 0 50px #000,
+            inset 0 0 50px #000;
+    -moz-box-shadow:
+        inset 0 0 50px #000,
+          inset 0 0 50px #000,
+            inset 0 0 50px #000;
+     box-shadow: 0px 30px 40px rgba(0,0,0,1);     
+}
+.module3 {
+    list-style-image: url(images/liltwinkle.png);
+}
+.module3 p {
+  margin-top: 5%;
+}
+div.wrap {
+    max-width: 80%;
+    box-shadow: silver 0px 6px 20px;
+    min-height: 100%;
+    margin: 0 auto;
+    background: rgba(255, 0, 222, 0.5);
+    padding: 0px 5px 0px 5px;
+}
+/* #Links ================================================== */
+a, a:visited {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    text-shadow: none;
+}
+a:hover, a:focus {
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 60px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de;
+    outline-style: 1px solid #fff;
+}
+/*.p a, p a:visited {
+    line-height: inherit;
+}*/
+.a, img:hover, img:focus {
+    outline-style: 1px solid #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 60px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de;
+}
+.ul, li:hover, li:focus {
+    cursor: pointer;
+    font-size: 18px;
+    outline-style: 1px solid #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 60px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de;
+}
+ul {
+    font-size: 18px;
+    list-style-type: none;
+  /*padding-top: 2.5em;
+    padding-left: 3.5em;*/
+}
+ul:li {
+    list-style-type: none;
+}
+.ribbonport:ul.links {
+    list-style-image: url(images/liltwinkle.png);
+}
+/* #Page Styles================================================== */
+h3.home {
+	  background-color: rgba(0, 0, 0, 0);
+	  background: url(images/sparklybannervectors1.png);
+	  background-position: center center, center top;
+	  background-repeat: repeat, no-repeat;
+  	color: #fff;
+    display: block;
+    font-family: "Homemade Apple", cursive;
+    font-size: 2.5em;
+    text-align: center;
+    padding: 0;
+}
+h3.port {
+	/*background-color: rgba(0, 0, 0, 0);*/
+	  background: url(images/sparklybannervectors1.png);
+	  background-position: center center, center top;
+   	background-repeat: repeat, no-repeat;
+   	color: #fff;
+    display: block;
+    font-family: "Homemade Apple", cursive;
+    text-align: center;
+    padding: 0;
+}
+h3.ribbon {
+    /*margin-bottom: 15px;*/
+    margin-top: 10px;
+    padding-top: 5px;
+    /*padding-bottom: 8px; */
+}
+h3.workflow {
+	  background-color: rgba(0, 0, 0, 0);
+	  background-image: url(images/sparklybannervectors1.png);
+  	background-position: center center, center top;
+  	background-repeat: repeat, no-repeat;
+	  color: #fff;
+    font-family: "Homemade Apple", cursive;
+    font-size-adjust: 2em;
+    display: block;
+    text-align: center;
+    padding:0;
+}
+h3.csscore {
+  	background-color: rgba(0, 0, 0, 0);
+	  background-image: url(images/sparklybannervectors1.png);
+	  background-position: center center, center top;
+	  background-repeat: repeat, no-repeat;
+	  color: #fff;
+    display: block;
+    font-family: "Homemade Apple", cursive;
+    text-align: center;
+    padding: 0;
+}
+h3.contact {
+	  background-color: rgba(0, 0, 0, 0);
+	  background-image: url(images/sparklybannervectors1.png);
+	  background-position: center center, center top;
+	  background-repeat: repeat, no-repeat;
+	  color: #fff;
+    display: block;
+    font-family: "Homemade Apple", cursive;
+    font-size: 3em;
+    text-align: center;
+    padding: 0;
+}
+h3.responsive_headline {
+    font-size: 3em;
+    margin: 100%;
+}
+.ribbon {
+    background-color: #400037;
+    color: #fff;
+    text-align: center;
+    font-family: "Miltonian", cursive;
+    font-size: 2.5em;
+    letter-spacing: .1em;
+}
+.ribbonport {
+	  background-color: #400037;
+    color: #FFF;
+    display: block;
+    text-align: center;
+    text-shadow: 2px 2px #000;
+    text-transform: lowercase;
+    font-family: "Miltonian", cursive;
+    font-size: 3em;
+    letter-spacing: .1em;
+    margin-bottom: .2em;
+}
+
+.strong {
+    color: #ffffff;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: bold;
+    margin-top: 1em;
+    text-shadow: 2px 2px #000;
+    blur-radius: 6;
+}
+/* basic menu styles */
+.block-menu {
+	background-image: url(images/bgpurplebanner.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: block;
+	font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: normal;
+  letter-spacing: .1em;
+  padding: 16px 16px;
+  /*height: auto;*/
+  width: auto;
+}
+.block-menu li {
+	display: inline-block;
+}
+.block-menu li a {
+	color: #fff;
+	display: block;
+	font-family: "Alegreya Sans SC", sans-serif;
+	 -webkit-font-smoothing: antialiased; /*Fix for webkit rendering*/
+	overflow: visible;
+	line-height: 18px;
+	font-size: 23px;
+	font-weight: normal;
+	padding: 15px 10px;
+}
+/* animation domination */
+.three-d {
+	perspective: 200px;
+	transition: all .07s linear;
+	position: relative;
+	cursor: pointer;
+	/*margin-right: 5px !important;
+	margin-left: 5px !important;*/
+}
+/* complete the animation! */
+.three-d:hover .three-d-box, 
+.three-d:focus .three-d-box {
+	transform: translateZ(-25px) rotateX(90deg);
+}
+.three-d-box {
+	transition: all .3s ease-out;
+	transform: translateZ(-25px);
+	transform-style: preserve-3d;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+/* put the "front" and "back" elements into place with CSS transforms, 
+specifically translation and translatez */
+.front {
+	transform: rotatex(0deg) translatez(25px);
+}
+.back {
+	transform: rotatex(-90deg) translatez(25px);
+	color: #400037;
+}
+.front, .back {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+  background: rgba(77, 0 , 66, 0.4);
+	padding: 15px 10px;
+	color: #fff;
+	pointer-events: none;
+	box-sizing: border-box;
+	/*margin: -48px -7px;*/
+}
+/*    *    *      *    *  3D Navigation/Menu END    *    *    *    *   */
+#two-thirds img {
+    display: block;
+    float: right; 
+    border-radius: 95px;
+    padding-left:1%;
+    padding-bottom: 1%;
+    padding-right: 0%;
+    padding-top: 1%;
+}
+#footer {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 1%;
+    display: block;
+  	position: relative;
+    background-color: #400037;
+    width: initial;
+    height: 50px;
+    font-size: 18px;
+    text-align: right;
+}
+#footer ul {
+  padding:0;
+  margin:0 0 0 10px;
+  font-size: 18px;
+  text-align: right;
+  display: block;
+  border-radius: 55% 15% 55% 15%;
+}
+#footer li {
+  float: right;
+  list-style:none;
+  margin-right:5px;
+  text-align: right;
+  padding: 0;
+  text-decoration: none;
+  border-radius: 55% 15% 55% 15%;
+}
+#footer span {
+  position: inherit;
+  font-style: normal;
+  color: #fff;
+ /* display: block;*/
+  /*text-align: right;*/
+  padding: 0;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 60px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de;
+}
+#footer span:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 60px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de;
+    outline-style: 1px solid #fff;
+    position: inherit;
+    display: block;
+}
+#footer span:hover:last-child /*#footer ul:hover, li:hover, a:hover, img:hover*/ {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 60px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de;
+    outline-style: 1px solid #fff;
+    display: block;
+}
+#footer img {
+  border-radius: 90%;
+}
+#footer img:hover {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 60px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de;
+    outline-style: 1px solid #fff;
+    display: block;
+    border-radius: 90%;
+}
+#footer span:visited, li:visited {
+  text-shadow: 0;
+  border-radius: 55% 15% 55% 15%;
+}
+
+
+/*.links li {
+    padding: 0;
+    border-bottom: 2px solid #000;
+    text-shadow: 1px 0em #ff00de;
+}
+.links li a {
+    text-decoration: none;
+}*/
+
+
+
+ /**************************POP_PORTFOLIO*******************************/
+/*#main{
+	flex: 1 0 auto;
+	position:relative;
+}*/
+#carousel{
+
+	text-align: center;
+	height:360px;
+	background-image: url(images/mywhiteshelf1.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	/*box-shadow:0 3px 5px #111;*/
+		/*** Initially hidden ***/
+	opacity:0;
+	  /*** Will animate the transition ***/
+	-moz-transition:0.4s opacity;
+	-webkit-transition:0.4s opacity;
+	transition:0.4s opacity;
+}
+#carousel.active{
+	opacity: 1;
+}
+#carousel li{
+	display:inline-block;
+	list-style:none;
+	right: 0;
+	width:150px;
+	height:150px;
+	margin: 125px 0 0 0;
+	position:relative;
+	-moz-transition:0.4s all;
+	-webkit-transition:0.4s all;
+	transition:0.4s all;
+}
+#carousel li.visible{
+	display:inline-block;
+}
+#carousel li a img{
+	border:none;
+}
+#carousel li img{
+	display:block;
+	width:auto;
+	height:auto;
+	max-width:100%;
+	max-height:100%;
+	position: absolute;
+	z-index:10;
+}
+/*** Creating the cradle below the thumbnails.
+	Uses % so that it grows with the image. ***/
+#carousel li:after{
+	background:url('images/cradle.png') no-repeat top center;
+	background-size:contain;
+	bottom: -100%;
+	content: "";
+	height: 100%;
+	left:0;
+	position: absolute;
+	/*right: 5%;*/
+	width: 100%;
+	z-index: 1;
+}
+#carousel li:hover{
+	height: 197px;
+  margin-top: -152px;
+  width: 222px;
+}
+.arrow{
+	background:url('images/arrows.png') no-repeat;
+	width:28px;
+	height:28px;
+	opacity:0.8;
+	text-indent:-999px;
+	overflow:hidden;
+	cursor:pointer;
+	display:none;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-428px;
+	margin-top:25px;
+}
+.arrow:hover{
+	opacity:1;
+}
+.arrow.next{
+	margin-left:400px;
+	background-position:top right;
+}
+/****************************POP-UP_PORTFOLIO_END**************************************/
+
+/*
+.port {
+ clear: left;
+ display: block;
+ }*/
+
+.icon {
+    font: 1.7em 'HeydingsCommonIconsRegular';
+}
+.contact li {
+    display: inline;
+    padding-right: 1em;
+}
+ 
+/* #Media Queries
+ ================================================== */
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+}
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+.mobilecontainer {
+  padding-bottom: 20px;
+  position: relative;
+}
+.one-third, /*.one-fourth, */.three-fourths, div.outer, div.inner {
+  float: none;
+}
+.ribbonport, .three-fourths {
+  padding-left: 0;
+}
+#two-thirds{
+  padding-left: 0;
+}
+#two-thirds p {
+	float: inherit;
+  padding-top: 3%;
+  padding-right: 1%;
+  padding-left: 1%;
+  padding-bottom: 1%;
+}
+#two-thirds img {
+  border-radius: 95px; 
+  float: right;
+  max-width: 60%;
+  max-height: 60%;
+  min-width: 10%;
+  min-height: 10%;
+}
+.one-fourth:img {
+	float: none;
+}
+ul#carousel.active {
+	min-width: 100%;
+	max-width: 100%;
+}
+a.three-d {
+	position: inherit;
+	max-height: 30px;
+	width: auto;
+}
+.block-menu {
+  background-size: 100%
+}
+ul.block-menu {
+  height: auto;
+  width: auto;
+}
+.block-menu li {
+  font-size: auto;
+  width: auto;
+  height: auto;
+  float: none;
+}
+block-menu li:last-child, block-menu li:hover:last-child {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  outline-style: 1px solid #fff;
+  }
+block-menu li:hover, .current {
+  border-bottom: 0;
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  outline-style: 1px solid #fff;
+  }
+.one-third img {
+  float: none;
+  margin: 0 auto;
+}
+.three-fourths-port {
+  height: auto;
+  width: 100%;
+  /* padding-left: .625em;
+     padding-right: 1%;*/
+  text-align: center;
+}
+.contact li {
+  display: block;
+  }
+#footer {
+  display: block;
+  
+ }
+#footer ul li a p, img {
+  float: right;
+  margin: 0;
+  position: relative;
+ }
+
+}
+
+@media only screen and (max-width: 320px) {
+.block-menu { 
+    background-image: none; 
+  }
+ }
