@@ -11,6 +11,8 @@
     src: url('../font/heydings_icons-webfont.eot?#iefix') format('embedded-opentype'), url('../font/heydings_icons-webfont.woff') format('woff'), url('../font/heydings_icons-webfont.ttf') format('truetype'), url('../font/heydings_icons-webfont.svg#HeydingsCommonIconsRegular') format('svg');
     font-weight: normal;
     font-style: normal;
+
+    
 }
 /* #Site Styles
  ================================================== */
@@ -34,12 +36,12 @@ html, body {
 		), url(images/bluepurple.jpg);
 }
 h1 {
-  background: url(images/mylogo.png) no-repeat 0 0;
   border: 0;
   color: #fff;
   height: 200px;
-	margin: 5px;
-	padding: 0;
+  margin-left: -25px;
+  margin-top: 5px;
+  padding: 0;
   text-decoration:none;
   width: 200px;
 }
@@ -133,9 +135,9 @@ ul:li {
 .one-fourth {
     width: 20%;
 }
-#two-thirds {
+.two-thirds {
     width: 90%;
-    padding-left: 1.1em;
+  /* padding-left: 1.1em;*/
     margin-top: 4%;
 }
 .three-fourths {
@@ -144,7 +146,7 @@ ul:li {
 }
 .three-fourths-port {
 	  height: 100%;
-    width: 100%;
+    width: auto;
 }
 /*.logo:hover {
     background: #989898;
@@ -152,7 +154,7 @@ ul:li {
     -moz-transition: all .15s ease-in-out;
     transition: all .25s ease-in-out;
 }*/
-#sixteen li:hover, /*.logo*/ li, /*.logo*/ /*.logo*/ li:focus {
+.sixteen li:hover, li:focus {
     cursor: pointer;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
     outline-style: 1px solid #fff;
@@ -312,7 +314,7 @@ ul:li {
 /* #Page Styles================================================== */
 h3.home {
 	  background-color: rgba(0, 0, 0, 0);
-	  background: url(images/sparklybannervectors1.png);
+	  background: url(images/sparklybannervectors1.jpg);
 	  background-position: center center, center top;
 	  background-repeat: repeat, no-repeat;
   	color: #fff;
@@ -322,9 +324,9 @@ h3.home {
     text-align: center;
     padding: 0;
 }
-h3.port {
+.port {
 	/*background-color: rgba(0, 0, 0, 0);*/
-	  background: url(images/sparklybannervectors1.png);
+	  background: url(images/sparklybannervectors2.jpg);
 	  background-position: center center, center top;
    	background-repeat: repeat, no-repeat;
    	color: #fff;
@@ -339,9 +341,9 @@ h3.ribbon {
     padding-top: 5px;
     /*padding-bottom: 8px; */
 }
-h3.workflow {
+.workflow {
 	  background-color: rgba(0, 0, 0, 0);
-	  background-image: url(images/sparklybannervectors1.png);
+	  background-image: url(images/sparklybannervectors2.jpg);
   	background-position: center center, center top;
   	background-repeat: repeat, no-repeat;
 	  color: #fff;
@@ -351,9 +353,9 @@ h3.workflow {
     text-align: center;
     padding:0;
 }
-h3.csscore {
+.csscore {
   	background-color: rgba(0, 0, 0, 0);
-	  background-image: url(images/sparklybannervectors1.png);
+	  background-image: url(images/sparklybannervectors2.jpg);
 	  background-position: center center, center top;
 	  background-repeat: repeat, no-repeat;
 	  color: #fff;
@@ -362,9 +364,9 @@ h3.csscore {
     text-align: center;
     padding: 0;
 }
-h3.contact {
+.contact {
 	  background-color: rgba(0, 0, 0, 0);
-	  background-image: url(images/sparklybannervectors1.png);
+	  background-image: url(images/sparklybannervectors2.jpg);
 	  background-position: center center, center top;
 	  background-repeat: repeat, no-repeat;
 	  color: #fff;
@@ -374,7 +376,7 @@ h3.contact {
     text-align: center;
     padding: 0;
 }
-h3.responsive_headline {
+.responsive_headline {
     font-size: 3em;
     margin: 100%;
 }
@@ -696,6 +698,20 @@ specifically translation and translatez */
 .ribbonport, .three-fourths {
   padding-left: 0;
 }
+#module3 {
+  float: inherit;
+  max-height: 100%;
+  max-width: auto;
+  min-height: 100%;
+  min-width: auto;
+}
+#three-fourths-port {
+  float: inherit;
+  max-height: 100%;
+  max-width: auto;
+  min-height: 100%;
+  min-width: auto;
+}
 #two-thirds{
   padding-left: 0;
 }
@@ -762,16 +778,16 @@ block-menu li:hover, .current {
   text-align: center;
 }
 .contact li {
-  display: block;
+  display: inline-block;
   }
 #footer {
   display: block;
-  
+
  }
 #footer ul li a p, img {
-  float: right;
+  float: none;
   margin: 0;
-  position: relative;
+  position: center;
  }
 
 }
